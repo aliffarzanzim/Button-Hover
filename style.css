@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+    height: 100vh;
+    width: 100%;
+    background: #F3F8FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Box */
+.alantois-box {
+    height: 100px;
+    width:150px;
+    background: #fff;
+    border-radius: 14px;
+    margin: 20px;
+    transition: all ease 0.3s;
+    float:left;
+    padding:5px 0 25px;
+    margin:8px 10;
+    overflow:hidden;
+    position:relative;
+}
+
+/* shadow and hover */
+.alantois-box {
+    box-shadow: -1px 7px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.alantois-box:hover {
+    transform: translateY(-9px);
+    box-shadow: -1px 7px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* box-img */
+.alantois-box-img {
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    height: 88px;
+}
+
+.alantois-box-img img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.alantois-box-img a{
+    height: 88px;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+/* box-title */
+
+.alantois-box-title {
+    text-align: center;
+    padding: 0 5px;
+}
+
+.alantois-box-title h2 {
+    display: block;
+    width: 100%;
+    line-height: 18px;
+    font-family: var(--title-font);
+    font-size: 13px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.alantois-box-title h2 a {
+    color: var(--buttons-category-text);
+    display: block;
+    line-height: 21px;
+}
+
