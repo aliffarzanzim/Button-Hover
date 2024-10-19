@@ -1,0 +1,304 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    a:-webkit-any-link {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .mycats {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #F3F8FB;
+      margin: 0 0px;
+    }
+
+    .mypost-slider {
+      width: 50%;
+      background-color: #eee; 
+    }
+
+    /* Box */
+    .mycat-box {
+      width: calc((100% - 50px) / 3);
+      float: left;
+      background: white;
+      padding: 5px 0 25px;
+      margin: 8px 0;
+      height: 130px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 14px;
+      box-shadow: -1px 7px 8px 0 rgb(0 0 0 / 10%);
+      transition: all .3s ease;
+    }
+
+    .mycat-box:hover {
+      transform: translateY(-9px);
+      box-shadow: -1px 7px 8px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .mycat-box-img {
+      margin: auto;
+      text-align: center;
+      overflow: hidden;
+      height: 88px;
+    }
+
+    .mycat-box-img img {
+      height: 80px;
+      width: 80px;
+      object-fit: cover;
+    }
+
+    .mycat-box-title {
+      text-align: center;
+      padding: 0 5px;
+    }
+
+    .mycat-box-title h2 {
+      display: block;
+      width: 100%;
+      line-height: 18px;
+      font-size: 13px;
+      text-align: center;
+      text-transform: capitalize;
+      margin: 0;
+    }
+
+    .mycat-box-title h2 a {
+      color: #333;
+      display: block;
+      line-height: 21px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .mysliddercat {
+        flex-direction: column;  /* Stack vertically on smaller screens */
+      }
+
+      .mycats, .mypost-slider {
+        width: 100%;
+        padding-top: 15px;/* Full width on smaller screens */
+      }
+
+      .mycat-box {
+        width: calc((100% - 50px) / 3);  /* Two boxes per row on tablets */
+        margin: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .mycat-box {
+        width: calc((100% - 16px) / 2);  /* Two boxes per row on phones */
+        margin: 8px 0;
+      }
+    }
+    body.pcdm-enable.pcdark-mode .mycat-box {
+    background-color: #5b5151 !important;
+    color: var(--pctext-cl) !important; /* Adjust the text color if necessary */
+}
+    body.pcdm-enable.pcdark-mode .mycats {
+    background-color: #000000 !important;
+    color: var(--pctext-cl) !important; /* Adjust the text color if necessary */
+}
+    
+  </style>
+
+    <div class="mycats">
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Online Class" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEgopqU6hiaLaOz17SdsMXlPFsKU8Evq1M6U1-Nl6zndDL42X_8HIuRDyt3NF7LUvuyLq4KYLDWsiIkFSjJerwIPJy451pOilsu2x_o3Bprbg4mLcN-VjQvUEqhsTnbyms89-mvOqXQHgrhU46i7gfgKVmopBivgA0wd4VxL_cCNsrkLIQPyU21E156YPWAX=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Online Class</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Telegram Group" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEjxKzbqBuGjB6cJVqBI1QrZwvvvvSSP0fq1qbLvOX-9DnNBaLDtI5s1kSv9380EONnh0UFhiyhfIZd5n50gPyYdOKo2umzGe3oxzcaww9JhgyuQmxsnlEsHIKNhVsPyR98KeZeuMPaLXzMvPXB0cySpuBuH9aQmgTVQnlsNxuoYpVbM9_b0gSvrrQzkd3kB=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Telegram Group</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Anatomy" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEi3hbAc1k-Z-MbFw_8ak8-QpuYuYfT6pNow_w8E2Npd-HsV2gWqv_1c8QITrHKYpLeIEo0xV_t4gTukonoPmtIJ2uCR9luViTaW-iUGRiK43eTMDnUpwnDBEKzuCQR4-DRTDJ8-QDQ3lcbHN1_6pwYwFiGqY5cOyoeJTnmnr-YoWf26b9NULhmm4iYs=s1600" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Anatomy</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Physiology" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEgTzoXJsF0_ObZkkwUbGURNXp_5yUX8wpLFkWZXi31CfhVa1nwLj3YdnUcFYgOy5ytfvy-PsElVbUOGh-pUeXfpHi7-DdQKDFhwY-Bkx1b6UuPj9XhzFwrlcaKpumPOTv50HrEwWvgqMeDkBVwjdFPqyM6MB2piLapBOpToOETKZBqIjJXcfmMdjvS7=s1600" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Physiology</a>
+          </h2>
+        </div>
+      </div>
+
+
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Biochemistry" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEj7GP0ur_qXh7xLc24967cXGd1sKAiFf--bA0rHlF0RsR5-_SWNrgfqq7il0s_V2DcfAaII1I4IVN3W8Zp6s66hSVAyFLUXG5cRGDVry2YS6A-5OX6zQyyzWA-W1UJ3bG3T0uAmBqkxKvJ9NtL06YVb1mNBBTc1SrYAVUjox9ViZ_l0MAWV2110d1QlxhSl=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Biochemistry</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Forensic Medicine" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEh5tp9geQcovRd3XXZJ8ny84O67kgYjoK3IKZyoGDerHx2isPpN8Env8FsTBSUNNVguu0ebdgWmdBuho7puuNPRS8oB_v8TjOYkXKuCPPmLQF7zlVAHa1ik2gFZR5ntYaP0v-0797A5uD6fgQTC_7CpJqtGZZKE-F3llPMOgzQmIgq-j_xsCxRS80fbzxE=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Forensic Medicine</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Pharmacology" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEiSrgHP4yQCKXR4OxM_e_H8gqTvp2INrVLuz2Ps2V90v2QHOO-Qr61LCY8q_OmcX-wWYVXjshlbdKi2kemqWzUGBtyycq0IV2TIg-VitHhRxqGCDKHwUkTZvFYhwNKdoeblBMcVYs1kY6CzFQp6xBscZaoP-OTvetuqPpvZc0lRQ91dpeCYRjLivFRBLFU=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Pharmacology</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Pathology" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEhchR-oTkJUB14LDB38Ztdl3d42alaa0_IBYqLX3LYLAKK7wxInkmReNadEU3ZpSysyNp9ZigC8Ic0yIeuNr85zlJnv-QFAHhr1onVHsyBvtvroGqsfLAD2poJegNlliEz3rC-sNjow6ArA7kl1pghAdFp6dvIgjtx74yKQ_NdT2h6GxSrOALlwK5Toa8Q=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Pathology</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Microbiology" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEiiqpT0b_Pfc2jFfKPFbi6RDuoiJ7XYfo__bDmhTd_o3oZXpqlxJJbbL-mTs689cGRInFPqMh0aMXD8sRoPEnxrNb8-eVbGxtvOHjIpd22TMU70SIF8gryh0o3AKkoomxMKkf5W8Z4ccrfA183_4KQorem2tZWgJ43j06TKdJdTVciKdL6iV31oPcI_vX0=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Microbiology</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Commed" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEjNfgfL2K-HmRDPuvAhj0VyjNm3H1eYnfr7FDkfRZRA5mI1_KtdOFQOUySkfzWbKUhHp8MrHIEYUsqruhDoxKh1zGJbb1y0GhsehxhdhRgwNwTbqSTFosOdXcn4zhBREm7ZnRKCS_oAFLNlP-GdcKz9XXNuiw0sfGsfzNJEkzTXqMT23zPDuFmxybvBcgs=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Commed</a>
+          </h2>
+        </div>
+      </div>
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Surgery & Allied" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEih60B12xQBuoaWA2kmAXr64343irt5N8eWJ6hZid21WiOjki_E3gRIf7v_OEt5fDWb6omVa5LX_fllRXKvlDL9pvFn33Q87M2x6uV_GClsclLpLSi9aw1HD-ZWVIzPbdWL1ls27ReL3Soz-qAeTqd6OTJqF12ku71AemdqxwdWIZmJQTBLT7QStxfggBw=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Surgery & Allied</a>
+          </h2>
+        </div>
+      </div>
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Medicine & Allied" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEihDpyWE-u3tVzr2zh-PRwgQRke4uNyX6A-oIsLqlhMnurQctO3cA0bH-n01q9BHnirVHP9S4ST7oYsSWdhKTvWyzDD3hdgBlp3iLMZ3UNzr_8MOS5M5m7JVb5KeRGY8wQ_K5hLLTjBFaH70SgxOIyn-Kzvzp_PA7W7pe6yt69-C14MF_Ex5NpK_UiOk9E=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Medicine & Allied</a>
+          </h2>
+        </div>
+      </div>
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Obgy" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEgY2L9qKtlxew3qWOxtZMsWbqfK1KkREv07u9HE7DW21WQqXP6KFFm2j56AYlYx1WPaKSVzsYvDFPUh9zSODG38SXSeMDM4w5Vpp-dvy5ACBPk668dImosKTVuTznxwPqB_agpADTt9x1gUkQMFYynUYqcmj3_qfMfHrp659I67sG3bD9nj-XX67p0KVUo=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Obgy</a>
+          </h2>
+        </div>
+      </div>
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="#">
+            <img alt="Career" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEiLsFFPIuG4I1Je6rYPjmG4J9D0MlWV23m9OZP9cl911phSK-Nh0cFjgFVInZl-xX0MIRAfH8iyvF2P-tXILC-tRcrPD22oxsZSyVd3c-8sf1JbpV-5_f_AfOUTz8v5V-P5HEQwoxBksH8LYUnJkqrWeH693PrfP-ECffFCNpRRDKd9zxVGuEkgHXsOrngP=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="#">Career</a>
+          </h2>
+        </div>
+      </div>
+      <div class="mycat-box">
+        <div class="mycat-box-img">
+          <a href="https://t.me/talktoadmin10bot">
+            <img alt="Contact The Admin" height="512" src="https://blogger.googleusercontent.com/img/a/AVvXsEjbqVU9DlKi-HezjcAFXnwHttuNUWvYFgwvqPOavnULb8uQyvFypBL-3gjFNT98F-zY0IjJboMk5d2gntcoSrlKcAbkPli-aDeA2ToSo4fdxopCHRoXfG4l0jUKNuh-bhCiwB-5--Q_pcabueB1LK6m5YIp_btp_p28n_dHjGnHzfIaVAGiNZzMoJvtE8JE=s512" width="512">
+          </a>
+        </div>
+        <div class="mycat-box-title">
+          <h2>
+            <a href="https://t.me/talktoadmin10bot">Contact The Admin</a>
+          </h2>
+        </div>
+      </div>
+    </div>
